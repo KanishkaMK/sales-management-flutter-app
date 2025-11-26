@@ -1,16 +1,51 @@
-# sales_management_app
+# Sales Management Mobile Application
 
-A new Flutter project.
+A comprehensive Flutter-based sales management application with customer management, product catalog, sales invoicing, and reporting capabilities.
 
-## Getting Started
+## 📱 Project Overview
 
-This project is a starting point for a Flutter application.
+This application is built for managing sales operations including:
+- **Customer Master Management** - CRUD operations for customers
+- **Product Master Management** - CRUD operations with image upload capability
+- **Sales Invoice Creation** - Create invoices with multiple products
+- **Sales Reporting** - View and filter sales invoices with analytics
 
-A few resources to get you started if this is your first Flutter project:
+## 🛠️ Technology Stack
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Frontend**: Flutter 3.x (Null Safety)
+- **Backend**: Node.js with Express.js
+- **Database**: MySQL
+- **State Management**: BLoC (Cubit)
+- **API Client**: Dio
+- **Local Storage**: Shared Preferences
+- **Image Handling**: Image Picker + Multer (backend)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📋 Prerequisites
+
+### Flutter Development
+- Flutter SDK 3.x or higher
+- Dart SDK 2.19 or higher
+- Android Studio / VS Code
+- Android Emulator or Physical Device
+
+### Backend Development
+- Node.js 16.x or higher
+- MySQL 8.x or higher
+- Postman (for API testing)
+
+## 🚀 Project Setup Instructions
+
+### 1. Flutter Application Setup
+
+```bash
+# Clone the repository
+git clone <repository-url>
+cd sales_management_app
+
+# Install dependencies
+flutter pub get
+
+# Run the application
+flutter run
+
+
