@@ -5,4 +5,5 @@ abstract class CustomerRepository {
   Future<Customer> createCustomer(Customer customer);
   Future<Customer> updateCustomer(Customer customer);
   Future<void> deleteCustomer(int id);
+   Future<Map<String, dynamic>> getDropdowns();
 }

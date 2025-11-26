@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:sales_management_app/presentation/bloc/auth/auth_bloc.dart';
+import 'package:sales_management_app/presentation/pages/customer_master_page.dart';
+import 'package:sales_management_app/presentation/pages/product_master_page.dart';
+import 'package:sales_management_app/presentation/pages/sales_invoice_page.dart';
+import 'package:sales_management_app/presentation/pages/sales_report_page.dart';
 
 class DashboardPage extends StatelessWidget {
-  const DashboardPage({Key? key}) : super(key: key);
+  const DashboardPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -35,10 +39,10 @@ class DashboardPage extends StatelessWidget {
               icon: Icons.people,
               color: Colors.blue,
               onTap: () {
-                // Navigator.push(
-                //   context,
-                //   MaterialPageRoute(builder: (context) => const CustomerMasterPage()),
-                // );
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const CustomerMasterPage()),
+                );
               },
             ),
             _DashboardCard(
@@ -46,10 +50,10 @@ class DashboardPage extends StatelessWidget {
               icon: Icons.inventory_2,
               color: Colors.green,
               onTap: () {
-                // Navigator.push(
-                //   context,
-                //   MaterialPageRoute(builder: (context) => const ProductMasterPage()),
-                // );
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const ProductMasterPage()),
+                );
               },
             ),
             _DashboardCard(
@@ -57,10 +61,10 @@ class DashboardPage extends StatelessWidget {
               icon: Icons.receipt,
               color: Colors.orange,
               onTap: () {
-                // Navigator.push(
-                //   context,
-                //   MaterialPageRoute(builder: (context) => const SalesInvoicePage()),
-                // );
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const SalesInvoicePage()),
+                );
               },
             ),
             _DashboardCard(
@@ -68,10 +72,10 @@ class DashboardPage extends StatelessWidget {
               icon: Icons.analytics,
               color: Colors.purple,
               onTap: () {
-                // Navigator.push(
-                //   context,
-                //   MaterialPageRoute(builder: (context) => const SalesReportPage()),
-                // );
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const SalesReportPage()),
+                );
               },
             ),
           ],
